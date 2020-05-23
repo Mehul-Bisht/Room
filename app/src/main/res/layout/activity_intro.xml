@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <EditText
+        android:id="@+id/enter_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_user_roll"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_user_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/save"
+        android:hint="User Roll"
+        android:padding="8dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:text="View all"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/enter_username_to_be_deleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save"
+        android:layout_centerInParent="true"
+        android:hint="Username to be deleted"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/delete_this_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Delete this user"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:layout_below="@id/enter_username_to_be_deleted"/>
+
+</RelativeLayout>
